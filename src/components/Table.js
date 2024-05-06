@@ -4,6 +4,7 @@ import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the 
 import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied to the grid
 
 const Table = () => {
+    // eslint-disable-next-line
   const [rowData, setRowData] = useState([
     { company: 'Tesla', model: 'Model Y', price: 64950, electric: true, month: 'June' },
     { company: 'Ford', model: 'F-Series', price: 33850, electric: false, month: 'October'  },
@@ -42,7 +43,7 @@ const Table = () => {
     { company: 'Fiat', model: 'Panda', price: 13724, electric: false, month: 'November'  },
     { company: 'Jaguar', model: 'I-PACE', price: 69425, electric: true, month: 'May'  },
   ]);
-
+// eslint-disable-next-line
   const [columnDefs, setColumnDefs] = useState([
     {
         field: "company",
